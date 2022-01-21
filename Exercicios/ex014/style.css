@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+h1, h2 {
+    /* font: font-style --- font-weight --- font-size --- fonte-family */
+    font:  italic bolder 2.5em 'Courier New', monospace;
+    text-decoration: underline;
+}

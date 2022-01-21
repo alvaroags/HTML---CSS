@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html5.ico" type="image/x-icon">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 105w0px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor.</p>
+    <video width="500" controls poster="imagens/foto-g.png">
+        <source src="midia/video-1.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade de video</p>
+    </video>
+    <br>
+    <video width="700" controls poster="imagens/foto-m.png">
+        <source src="midia/video-2.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade de video</p>
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
