@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Celulas</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td ,th{
+            vertical-align: middle;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead{
+            background-color: #444444;
+            color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Celulas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Titulo</th>
+                <th>Titulo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">ABACAXI</td>
+                
+                <td rowspan="2">ABACAXI</td>
+            </tr>
+            <tr>
+                <td>ABACAXI</td>
+                
+                <td>ABACAXI</td>
+            </tr>
+            <tr>
+                <td>ABACAXI</td>
+                <td colspan="2">ABACAXI</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
