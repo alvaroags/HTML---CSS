@@ -6,24 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
     <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
         form{
+            margin: 20px;
+            width: 500px;
             border-radius: 10px;
             background-color: #eee;
             padding: 10px;
             border: 1px solid black;
         }
+        label{
+            padding-bottom: 10px;
+        }
         input{
             display: block;
+            margin-bottom: 10px;
         }
         #dv{
             display: flex;
+            margin-bottom: 0px;
+        }
+        #dv > input{
+            margin-right: 10px;
+        }        
+        #check{
+            display: block;
+            margin-bottom: 10px;
+        }
+        #check > label {
+            display: block;
+        }
+        #check > input{
+            display: inline-flex;
+            margin: 2px 5px 15px 10px;
         }
     </style>
 </head>
 <body>
     <form action="#" name="f-cadastro" method="get">
         <label>Nome:</label>
-        <input type="text" name="f-nome">
+        <input type="text" name="f-nome" maxlength="20" size="25">
+        <label>Senha:</label>
+        <input type="password" name="f-senha" maxlength="10" size="15">
+        <div id="check">
+            <label>Esportes favoritos:</label>
+            <input type="checkbox" name="f-futsal">Futsal
+            <input type="checkbox" name="f-basquete" class="check">Basquete
+            <input type="checkbox" name="f-futebol" class="check">Futebol
+            <input type="checkbox" name="f-volei" class="">Volei
+            <label>Possui Carro?</label>
+            <input type="radio">
+        </div>
         <div id="dv">
             <input type="submit" name="f-enviar" value="Gravar">
             <input type="reset" name="f-limpar" value="Limpar">
