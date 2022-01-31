@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com horas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.1em;
+            padding: 15px;
+        }
+        form{
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            padding: 10px;
+            display: inline-block;
+        }
+        .quebra{
+            display: block;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        .submit{
+            padding: 5px;
+            font-size: 1.1em;
+        }
+        .submit:hover{
+            background-color: rgb(80, 80, 80);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="form" method="post">
+        <label class="quebra">Hora:</label>
+        <input type="time" name="f-time" min="08:00" max="17:00" class="quebra">
+        <label>Data:</label>
+        <input type="date" name="f-data" min="2021-03-13" max="2022-05-14" class="quebra">
+        <label>Data e Hora:</label>
+        <input type="datetime-local" name="f-data-hora" class="quebra">
+        <input type="image" name="f-img" src="imagens/astronauta.png" width="100px">
+        <input type="submit" name="f-enviar" value="Gravar" class="quebra submit">
+    </form>
+</body>
+</html>
