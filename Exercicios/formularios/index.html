@@ -33,7 +33,6 @@
             margin-right: 10px;
         }        
         #check{
-            display: block;
             margin-bottom: 10px;
         }
         #check > label {
@@ -46,7 +45,7 @@
     </style>
 </head>
 <body>
-    <form action="#" name="f-cadastro" method="get">
+    <form action="#" name="f-cadastro" method="post">
         <label>Nome:</label>
         <input type="text" name="f-nome" maxlength="20" size="25">
         <label>Senha:</label>
@@ -58,7 +57,8 @@
             <input type="checkbox" name="f-futebol" class="check">Futebol
             <input type="checkbox" name="f-volei" class="">Volei
             <label>Possui Carro?</label>
-            <input type="radio">
+            <input type="radio" name="f-carro" value="s">Sim
+            <input type="radio" name="f-carro" value="n" checked>Não
         </div>
         <div id="dv">
             <input type="submit" name="f-enviar" value="Gravar">
