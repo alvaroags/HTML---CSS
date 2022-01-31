@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form{
+            border-radius: 10px;
+            background-color: #eee;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        input{
+            display: block;
+        }
+        #dv{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f-cadastro" method="get">
+        <label>Nome:</label>
+        <input type="text" name="f-nome">
+        <div id="dv">
+            <input type="submit" name="f-enviar" value="Gravar">
+            <input type="reset" name="f-limpar" value="Limpar">
+            <input type="button" name="f-botao" value="Nada">
+        </div>
+    </form>
+</body>
+</html>
