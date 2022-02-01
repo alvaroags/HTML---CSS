@@ -43,6 +43,10 @@
             box-shadow: 1px 1px 1px black;
             transform: scale(1.1);
         }
+        #lista {
+            font-size: 1.2em;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -57,6 +61,14 @@
                 <option value="red">Vermelho</option>
                 <option value="green">Verde</option>
             </select>
+            <input list="lista" name="lista">
+            <datalist id="lista">
+                <option value="Blue">
+                <option value="White">
+                <option value="Black">
+                <option value="Red">
+                <option value="Green">
+            </datalist>
             <input type="submit" name="submit" value="Gravar" class="quebra" id="enviar">
         </fieldset>
     </form>
