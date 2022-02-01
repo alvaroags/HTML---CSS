@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2.0</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: lightslategray;
+        }
+        form{
+            margin: 20px;
+            max-width: 600px;
+        }
+        fieldset{
+            padding: 10px;background-color: lightgray;
+            box-shadow: 2px 2px 3px black;
+        }
+        fieldset, form{
+            border-radius: 10px;
+        }
+        select{
+            font-size: 1em;
+            padding: 5px;
+            max-width: 200px;
+        }
+        .quebra{
+            display: block;
+            margin-bottom: 15px;
+        }
+        #enviar{
+            font-size: 1.2em;
+            padding: 5px;
+        }
+        #enviar:hover{
+            box-shadow: 1px 1px 1px black;
+            transform: scale(1.1);
+        }
+        #lista {
+            font-size: 1.2em;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f-cadastro" method="get">
+        <fieldset>
+            <label class="quebra">Escolha uma cor:</label>
+            <select name="f-cor" id="cor" class="quebra">
+                <option value="#" selected> Selecione: </option>
+                <option value="blue">Azul</option>
+                <option value="white">Branco</option>
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+                <option value="green">Verde</option>
+            </select>
+            <input list="lista" name="lista">
+            <datalist id="lista">
+                <option value="Blue">
+                <option value="White">
+                <option value="Black">
+                <option value="Red">
+                <option value="Green">
+            </datalist>
+            <input type="submit" name="submit" value="Gravar" class="quebra" id="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
