@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+            background-color: lightslategray;
+        }
+        form{
+            margin: 20px;
+        }
+        fieldset{
+            padding: 10px;background-color: lightgray;
+            box-shadow: 2px 2px 3px black;
+        }
+        fieldset, form{
+            border-radius: 10px;
+        }
+        .quebra{
+            display: block;
+            margin-bottom: 15px;
+        }
+        #email{
+            background-color: aquamarine;
+            height: 20px;
+            border-radius: 5px;
+            width: 200px;
+        }
+        #enviar{
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-bottom: 0px;
+            margin: auto;
+        }
+        #enviar:hover {
+            box-shadow: 2px 2px 3px black;
+            transform: scale(1.1);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #cor{
+            width: 70px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        #pesquisa{
+            box-shadow: 2px 2px 3px black;
+            border-radius: 2px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="form"   method="post">
+        <fieldset>
+            <label class="quebra">E-mail:</label>
+            <input type="email" name="f-email" id="email">
+        </fieldset>
+        <fieldset>
+            <label>Cores:</label>
+            <input type="color" name="f-cor" id="cor" class="quebra">
+        <label>Telefone:</label>
+        <input type="tel" name="f-tel" pattern="[0-9]{2}[9]{1}[0-9]{4}-[0-9]{4}" placeholder="Exemplo:37 91234-5678" class="quebra">
+        <label>Pesquisar:</label>
+        <input type="search" name="f-pesquisar" placeholder="Pesquisar" class="quebra" id="pesquisa">
+        <input type="submit" name="f-enviar" value="Guardar" id="enviar" class="quebra">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
