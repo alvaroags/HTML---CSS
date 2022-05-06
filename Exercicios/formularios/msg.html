@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Mensagens</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #fechar-botão{
+            float: right;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .errado{
+            padding: 10px;
+            color: white;
+            display: block; 
+            margin: 10px;
+        }
+        .i12{
+            background-color: #FA1C07;
+        }
+        .i13{
+            background-color: #0A81FF;
+        }
+        .i14{
+            background-color: #9215E6;
+        }
+        .i15{
+            background-color: #E39505;
+        }
+        .col-12{
+            float: left;
+            width: 100%;
+        }
+        .col-3{
+            float: left;
+            width: 25%;
+        }
+    </style>
+    <script>
+        function fecharMensagem(event){
+            event.currentTarget.parentElement.style.display = "none";
+        }
+        function abrirMensagem(){
+            var divMensagens = document.getElementById ('mensagem');
+            divMensagens.innerHTML = 'i15';
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="row">
+            <div class="i12 errado">
+                Indica que alguma ação deu errado
+                <span id="fechar-botão" onclick="fecharMensagem(event)">&times</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="i13 errado">
+                Indica que alguma ação foi bem sucedida
+                <span id="fechar-botão" onclick="fecharMensagem(event)">&times</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="i14 errado">
+                Indica uma informação neutra
+                <span id="fechar-botão" onclick="fecharMensagem(event)">&times</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="i15 errado">
+                Indica um aviso que precisa de sua atenção
+                <span id="fechar-botão" onclick="fecharMensagem(event)">&times</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <div id="mensagem"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <button onclick="abrirMensagem();">Mensagem Verde</button>
+        </div>
+        <div class="col-3">
+            <button>Mensagem Azul</button>
+        </div>
+        <div class="col-3">
+            <button>Mensagem Amarela</button>
+        </div>
+        <div class="col-3">
+            <button>Mensagem Vermelha</button>
+        </div>
+    </div>
+</body>
+</html>
